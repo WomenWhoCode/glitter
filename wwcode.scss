@@ -10,7 +10,9 @@
 /*	2. TYPOGRAPHY
 /*	3. PADDING
 /*  4. FORMS
-/*  5. ERROR HANDLING
+/*  5. LINKS
+/*  6. ERROR HANDLING
+/*  7. ALERTS
 /* ============= */
 
 /* === 1. COLORS === */
@@ -72,6 +74,9 @@ $base-font-color:           $blackish;
 //General Padding
 $standard-padding:          30px;
 
+//Top Nav
+$top-nav-height:            75px;
+
 
 
 /* === 4. FORMS === */
@@ -99,6 +104,7 @@ button{
 //Checkboxes
 .checkbox{
   label{
+    display: inline-block;
     text-transform: none;
     position: relative;
     top: $standard-padding/-1.2;
@@ -133,17 +139,17 @@ button{
     margin-bottom: $standard-padding/1.5;
     transition: .5s;
     &:hover{
-        opacity: .7;
+      opacity: .7;
     }
-}
-#filepicker_url{
+  }
+  #filepicker_url{
     cursor: pointer;
     border-style: dashed;
     text-align: center;
     color: $blackish;
     padding: $standard-padding/1.5 $standard-padding/2 $standard-padding/3 $standard-padding/2;
     letter-spacing: $standard-padding/15;
-}
+  }
 
   //Inputs
 input{
@@ -160,16 +166,16 @@ input{
         outline: none;
         border-bottom: $input-border-size solid $blackish;
     }
+    &:focus{
+        box-shadow: none;
+        outline: none;
+        border-bottom: $input-border-size solid $blackish;
+    }
     &.error{
         border: $input-border-size solid $red;
         &:focus {
             color: $red;
         }
-    }
-    &:focus{
-        box-shadow: none;
-        outline: none;
-        border-bottom: $input-border-size solid $blackish;
     }
     &[type="checkbox"]{
         display: none;
@@ -228,22 +234,19 @@ select{
     margin-right: $standard-padding/2;
   }
   
-.delete{
-    display: inline-block;
-    cursor: pointer;
+.x{
+    color: $white;
+    font-size: $standard-padding;
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    font-size: $standard-padding/1.2;
+    cursor: pointer;
+    right: $standard-padding/2;
+    display: flex;
     float: right;
-    margin-left: $standard-padding/2;
-    margin-top: $standard-padding/-6;
-    transition: .5s;
-    &:hover{
-        opacity: .7;
-    }
+    width: $standard-padding*.76;
+    height: $standard-padding*.93;
+    margin: 0;
+    position: relative;
+    right: $standard-padding*-1.5;
 }
 
 //Textareas
@@ -252,6 +255,8 @@ textarea{
     position: relative;
     border: $input-border-size solid $blackish;
     padding: $standard-padding/2;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     &:active{
         outline: none;
     }
@@ -263,15 +268,72 @@ textarea{
     }
 }
 
-/* === 5. ERROR HANDLING === */
+/* === 5. LINKS === */
+
+a{
+    &.underline{
+      border-bottom: $standard-padding/6 solid $link-teal;
+      &:hover{
+        background: $link-teal;
+      }
+    }
+    &.teal-button{
+      background-color: $teal;
+      color: $white;
+      padding: $standard-padding/1.5 $standard-padding*2;
+      &:hover{
+        background-color: $teal-button-hover;
+      }
+      &:focus{
+        background: $teal-button-focus;
+      }
+    }
+  }
+
+/* === 6. ERROR HANDLING === */
 
 .error-text{
-  color: $red;
-  margin-top: $standard-padding/-1.5;
-}
-.error-input{
-  border: $input-border-size solid $red;
-  &:focus{
-    border: $input-border-size solid $red;
+    color: $red;
+    margin-top: $standard-padding/-6;
+    margin-bottom: $standard-padding/2;
   }
-}
+  .error-input{
+    border: $input-border-size solid $red;
+    &:focus{
+      border: $input-border-size solid $red;
+    }
+  }
+
+
+
+/* === 7. ALERTS === */
+
+  .alert {
+    color: $white;
+    padding: $standard-padding/1.2;
+    text-align: center;
+    letter-spacing: $base-font-spacing;
+    background-color: $teal-rgba;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    top: $top-nav-height;
+    &.alert-error{
+      background-color: $red-rgba;
+    }
+    a{
+      border-bottom: $input-border-size solid $white;
+      &:hover{
+        color: $white;
+      }
+      &.flash-close{
+        border-bottom: 0;
+        float: right;
+        text-decoration: none;
+        .x{
+          right: 0;
+        }
+      }
+    }
+  }
+  
