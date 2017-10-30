@@ -6,16 +6,17 @@
 /*
 
 /* === INDEX === */
-/*	1. COLORS
-/*	2. TYPOGRAPHY
-/*	3. PADDING
-/*  4. FORMS
-/*  5. LINKS
-/*  6. ERROR HANDLING
-/*  7. ALERTS
+/*  1. VARIABLES
+/*  2. FORM STYLES
+/*  3. LINK STYLES
+/*  4. ERROR STYLES
+/*  5. ALERT STYLES
 /* ============= */
 
-/* === 1. COLORS === */
+
+/* ==================== */
+/* === 1. VARIABLES === */
+/* ==================== */
 
 //Official WWCode teal
 $teal:                      #007a7c;
@@ -51,9 +52,10 @@ $error-alert-background:    $red-rgba;
 $success-alert-background:  $teal-rgba;
 
 //Inputs
-$input-border-size:              3px;
+$input-border-size:         3px;
 
-/* === 2. TYPOGRAPHY === */
+//Input Background Image Sizes
+$check-size:                21px;
 
 //Font Families
 $base-font-family:          "Lucida Grande";
@@ -68,9 +70,6 @@ $base-mobile-size:          16px;
 //Font Colors
 $base-font-color:           $blackish;
 
-
-/* === 3. PADDING === */
-
 //General Padding
 $standard-padding:          30px;
 
@@ -78,8 +77,9 @@ $standard-padding:          30px;
 $top-nav-height:            75px;
 
 
-
-/* === 4. FORMS === */
+/* ====================== */
+/* === 2. FORM STYLES === */
+/* ====================== */
 
 //Button
 button{
@@ -87,7 +87,7 @@ button{
   border: none;
   color: $white;
   outline: none;
-  margin: 0;
+  margin: $standard-padding 0;
   padding: $standard-padding/1.5 $standard-padding*2;
   transition: .5s;
   -webkit-appearance: none;
@@ -107,7 +107,7 @@ button{
     display: inline-block;
     text-transform: none;
     position: relative;
-    top: $standard-padding/-1.2;
+    top: $standard-padding/-2;
   }
   .square {
     cursor: pointer;
@@ -122,218 +122,231 @@ button{
     &.selected {
       background-image: url("https://s3-us-west-2.amazonaws.com/wwcodefroala-staging/uploads%2F1508959867618-check-teal.svg");
       border: $standard-padding/10 solid $teal;
-      background-size: 21px;
+      background-size: $check-size;
       background-repeat: no-repeat;
       background-position: center;
     }
   }
 }
 
-//Images
+//Image Uploaders
 #filepicker_image{
-    cursor: pointer;
-    width: $standard-padding*4;
-    height: $standard-padding*4;
-    background-size: cover;
-    border-radius: 100%;
-    margin-bottom: $standard-padding/1.5;
+  cursor: pointer;
+  width: $standard-padding*4;
+  height: $standard-padding*4;
+  background-size: cover;
+  border-radius: 100%;
+  margin-bottom: $standard-padding/1.5;
+  transition: .5s;
+  &:hover{
+    opacity: .7;
+  }
+}
+#filepicker_url{
+  cursor: pointer;
+  border-style: dashed;
+  text-align: center;
+  color: $blackish;
+  padding: $standard-padding/1.5 $standard-padding/2 $standard-padding/3 $standard-padding/2;
+  letter-spacing: $standard-padding/15;
+}
+
+//Inputs
+input{
+  border: none;
+  border-bottom: $input-border-size solid $blackish;
+  box-shadow: none;
+  font-size: $base-font-size;
+  letter-spacing: $base-font-spacing;
+  padding: $standard-padding/1.5  $standard-padding/1.2 $standard-padding/1.2 0;
+  width: 100%;
+  &:active{
+      box-shadow: none;
+      outline: none;
+      border-bottom: $input-border-size solid $blackish;
+  }
+  &:focus{
+      box-shadow: none;
+      outline: none;
+      border-bottom: $input-border-size solid $blackish;
+  }
+  &.error{
+      border: $input-border-size solid $red;
+      &:focus {
+          color: $red;
+      }
+  }
+  &[type="checkbox"]{
+      display: none;
+  }
+  &[type="submit"]{
+    color: $white;
+    border-bottom: none;
+    background: $teal;
+    width: 100%;
+    padding: $standard-padding/1.5;
+    font-weight: bold;
+    letter-spacing: $base-font-spacing;
     transition: .5s;
     &:hover{
-      opacity: .7;
-    }
-  }
-  #filepicker_url{
-    cursor: pointer;
-    border-style: dashed;
-    text-align: center;
-    color: $blackish;
-    padding: $standard-padding/1.5 $standard-padding/2 $standard-padding/3 $standard-padding/2;
-    letter-spacing: $standard-padding/15;
-  }
-
-  //Inputs
-input{
-    border: none;
-    border-bottom: $input-border-size solid $blackish;
-    box-shadow: none;
-    font-size: $base-font-size;
-    letter-spacing: $base-font-spacing;
-    padding: $standard-padding/1.5  $standard-padding/1.2 $standard-padding/1.2 0;
-    margin-bottom: $standard-padding/2;
-    width: 100%;
-    &:active{
-        box-shadow: none;
-        outline: none;
-        border-bottom: $input-border-size solid $blackish;
+      background-color: $teal-light;
     }
     &:focus{
-        box-shadow: none;
-        outline: none;
-        border-bottom: $input-border-size solid $blackish;
+      background-color: $teal-dark;
     }
-    &.error{
-        border: $input-border-size solid $red;
-        &:focus {
-            color: $red;
-        }
-    }
-    &[type="checkbox"]{
-        display: none;
-    }
-    &[type="submit"]{
-        color: $white;
-        border-bottom: none;
-        background: $teal;
-        width: 100%;
-        padding: 20px;
-        font-weight: bold;
-        letter-spacing: 3px;
-        &:hover{
-        background-color: $teal-light;
-        }
-        &:focus{
-        background-color: $teal-dark;
-        }
-    }
+  }
 }
 
 //Labels
 label{
-    color: $blackish;
-    display: block;
-    font-size: $base-font-size;
-    letter-spacing: $standard-padding/10;
-    margin-top: $standard-padding;
-    text-transform: uppercase;
-    margin-top: $standard-padding*1.33;
+  color: $blackish;
+  display: block;
+  font-size: $base-font-size;
+  letter-spacing: $standard-padding/10;
+  margin-top: $standard-padding;
+  text-transform: uppercase;
 }
   
 //Selects
 select{
-    background: $white;
-    background-image: url("https://s3-us-west-2.amazonaws.com/wwcodefroala-staging/uploads%2F1508955808225-dropdown.svg");
-    background-size: $standard-padding*2;
-    background-repeat: no-repeat;
-    background-position: right;
-    border: $input-border-size solid $blackish;
-    width: 100%;
-    margin-bottom: $standard-padding;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 0px;
-    padding: $standard-padding/1.5;
+  background: $white;
+  background-image: url("https://s3-us-west-2.amazonaws.com/wwcodefroala-staging/uploads%2F1508955808225-dropdown.svg");
+  background-size: $standard-padding*2;
+  background-repeat: no-repeat;
+  background-position: right;
+  border: $input-border-size solid $blackish;
+  width: 100%;
+  margin-bottom: $standard-padding;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0px;
+  padding: $standard-padding/1.5;
 }
 
 //Tags
 .tag{
-    background-color: $teal;
-    color: $white;
-    padding: $standard-padding/2;
-    display: inline-block;
-    margin-top: $standard-padding/2;
-    margin-right: $standard-padding/2;
-  }
-  
-.x{
+  background-color: $teal;
+  color: $white;
+  padding: $standard-padding/2;
+  padding-right: $standard-padding;
+  padding-bottom: $standard-padding/3;
+  display: inline-block;
+  margin-top: $standard-padding/2;
+  margin-right: $standard-padding/2;
+  .delete{
     color: $white;
     font-size: $standard-padding;
     transform: rotate(45deg);
     cursor: pointer;
-    right: $standard-padding/2;
+    top: $standard-padding/-3.75;
     display: flex;
     float: right;
     width: $standard-padding*.76;
     height: $standard-padding*.93;
     margin: 0;
     position: relative;
-    right: $standard-padding*-1.5;
+    right: $standard-padding/-1.5;
+  }
 }
 
 //Textareas
 textarea{
-    width: 100%;
-    position: relative;
-    border: $input-border-size solid $blackish;
-    padding: $standard-padding/2;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    &:active{
-        outline: none;
-    }
-    &:focus{
-        outline: none;
-    }
-    &.error{
-        border: $input-border-size solid $red;
-    }
+  width: 100%;
+  position: relative;
+  border: $input-border-size solid $blackish;
+  padding: $standard-padding/2;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  &:active{
+      outline: none;
+  }
+  &:focus{
+      outline: none;
+  }
+  &.error{
+      border: $input-border-size solid $red;
+  }
 }
 
-/* === 5. LINKS === */
+/* ====================== */
+/* === 3. LINK STYLES === */
+/* ====================== */
 
 a{
-    &.underline{
-      border-bottom: $standard-padding/6 solid $link-teal;
-      &:hover{
-        background: $link-teal;
-      }
-    }
-    &.teal-button{
-      background-color: $teal;
-      color: $white;
-      padding: $standard-padding/1.5 $standard-padding*2;
-      &:hover{
-        background-color: $teal-button-hover;
-      }
-      &:focus{
-        background: $teal-button-focus;
-      }
+  &.underline{
+    border-bottom: $standard-padding/6 solid $link-teal;
+    &:hover{
+      background: $link-teal;
     }
   }
+  &.teal-button{
+    background-color: $teal;
+    color: $white;
+    padding: $standard-padding/1.5 $standard-padding*2;
+    &:hover{
+      background-color: $teal-button-hover;
+    }
+    &:focus{
+      background: $teal-button-focus;
+    }
+  }
+}
 
-/* === 6. ERROR HANDLING === */
+/* ======================= */
+/* === 4. ERROR STYLES === */
+/* ======================= */
 
 .error-text{
-    color: $red;
-    margin-top: $standard-padding/-6;
-    margin-bottom: $standard-padding/2;
-  }
-  .error-input{
+  color: $red;
+  margin-top: $standard-padding/-6;
+  margin-bottom: $standard-padding/2;
+}
+.error-input{
+  border: $input-border-size solid $red;
+  &:focus{
     border: $input-border-size solid $red;
-    &:focus{
-      border: $input-border-size solid $red;
+  }
+}
+
+/* ======================= */
+/* === 5. ALERT STYLES === */
+/* ======================= */
+
+.alert {
+  color: $white;
+  padding: $standard-padding/1.2;
+  text-align: center;
+  letter-spacing: $base-font-spacing;
+  background-color: $teal-rgba;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: $top-nav-height;
+  &.alert-error{
+    background-color: $red-rgba;
+  }
+  a{
+    border-bottom: $input-border-size solid $white;
+    &:hover{
+      color: $white;
     }
   }
-
-
-
-/* === 7. ALERTS === */
-
-  .alert {
+  .delete{
     color: $white;
-    padding: $standard-padding/1.2;
-    text-align: center;
-    letter-spacing: $base-font-spacing;
-    background-color: $teal-rgba;
-    position: fixed;
-    z-index: 9;
-    width: 100%;
-    top: $top-nav-height;
-    &.alert-error{
-      background-color: $red-rgba;
-    }
-    a{
-      border-bottom: $input-border-size solid $white;
-      &:hover{
-        color: $white;
-      }
-      &.flash-close{
-        border-bottom: 0;
-        float: right;
-        text-decoration: none;
-        .x{
-          right: 0;
-        }
-      }
-    }
+    font-size: $standard-padding;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: flex;
+    float: right;
+    width: $standard-padding*.76;
+    height: $standard-padding*.93;
+    margin: 0;
+    position: relative;
+    right: $standard-padding/3;
+    top: $standard-padding/-5;
   }
-  
+  span{
+    position: relative;
+    top: $standard-padding/15;
+  }
+}
