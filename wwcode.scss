@@ -284,10 +284,10 @@ a{
     color: $white;
     padding: $standard-padding/1.5 $standard-padding*2;
     &:hover{
-      background-color: $teal-button-hover;
+      background-color: $button-hover;
     }
     &:focus{
-      background: $teal-button-focus;
+      background: $button-focus;
     }
   }
 }
