@@ -1,0 +1,36 @@
+//Official WWCode teal
+$teal:                      #007a7c;
+$teal-rgba:                 rgba(0, 122, 124, 0.8);
+
+//Other colors
+$blackish:                  #19191A;
+$blackish-rgba:             rgba(25, 25, 26, 0.5);
+$navy-bluish:               #0f283c;
+$navy-bluish-rgba:          rgba(15,40,60, 0.8);
+$red:                       #e04a32;
+$red-rgba:                  rgba(224,74,50, 0.9);
+$teal-light:                #029393;
+$teal-light-rgba:           rgba(2, 147, 147, 0.6);
+$teal-dark:                 #024f4f;
+$teal-dark-rgba:            rgba(2,79,79,.6);
+
+//Backgrounds
+$white:                     #ffffff;
+$whitish:                   #f5f5f5;
+
+//Links
+$link-teal:                #67bebf;
+$disabled-gray:            #878C8C;
+
+//buttons
+$button-bg:                 $teal;
+$button-hover:              $teal-light;
+$button-focus:              $teal-dark;
+
+//Alerts
+$error-inline-color:        $red;
+$error-alert-background:    $red-rgba;
+$success-alert-background:  $teal-rgba;
+
+//Font Colors
+$base-font-color:           $blackish;

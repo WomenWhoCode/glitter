@@ -1,0 +1,38 @@
+{
+  "name": "glitter",
+  "description": "Official HTML, CSS, and Javascript UI framework for Women Who Code applications.",
+  "version": "0.1.0",
+  "keywords": [
+    "css",
+    "sass",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "react",
+    "javascript"
+  ],
+  "license": "NPOSL-3.0",
+  "author": "WWCode Core Team <core-team@womenwhocode.com>",
+  "homepage": "https://github.com/WomenWhoCode/glitter",
+  "bugs": "https://github.com/WomenWhoCode/glitter/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WomenWhoCode/glitter.git"
+  },
+  "main": "dist/main.js",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.2.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open-page src/"
+  }
+}

@@ -1,0 +1,56 @@
+// Flash alert messages
+.wwcode-alert{
+  background-color: $teal-rgba;
+  color: $white;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  left: 0;
+  letter-spacing: $base-font-spacing;
+  padding: $standard-padding/1.5;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 9;
+  &.wwcode-alert-error{
+    background-color: $red-rgba;
+  }
+  a.wwcode-link{
+    border-bottom: $input-border-size solid $white;
+    &:hover{
+      color: $white;
+    }
+  }
+  .wwcode-alert-text{
+    position: relative;
+    top: $standard-padding/7.5;
+  }
+  ul,ol{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    padding: $standard-padding/2 $standard-padding;
+  }
+  li{
+    text-align: left;
+  }
+  .wwcode-delete{
+    color: $white;
+    font-size: $standard-padding;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: flex;
+    float: right;
+    width: $standard-padding*.76;
+    height: $standard-padding*.93;
+    margin: 0;
+    position: absolute;
+    right: $standard-padding*2;
+    top: $standard-padding/2;
+  }
+  span.wwcode-span{
+    position: relative;
+    top: $standard-padding/15;
+  }
+}

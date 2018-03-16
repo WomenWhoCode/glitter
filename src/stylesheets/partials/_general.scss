@@ -1,0 +1,48 @@
+// Links
+a.wwcode-link{
+  color: $teal;
+  cursor: pointer;
+  font-family: $base-font-family;
+  text-decoration: none;
+  font-size: $base-font-size;
+  transition: $delay-time;
+  &:hover{
+    background-color: $link-teal;
+    color: $blackish;
+  }
+  &.wwcode-link-underline{
+    color: $blackish;
+    border-bottom: $standard-padding/6 solid $link-teal;
+    &:hover{
+      background-color: $link-teal;
+    }
+  }
+}
+
+// Tags
+.wwcode-tag{
+  background-color: $teal;
+  color: $white;
+  display: inline-block;
+  padding: $standard-padding/2;
+  padding-right: $standard-padding;
+  padding-bottom: $standard-padding/3;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin-top: $standard-padding/2;
+  margin-right: $standard-padding/2;
+  .wwcode-delete{
+    color: $white;
+    font-size: $standard-padding;
+    transform: rotate(45deg);
+    cursor: pointer;
+    top: $standard-padding/-3.75;
+    display: flex;
+    float: right;
+    width: $standard-padding*.76;
+    height: $standard-padding*.93;
+    margin: 0;
+    position: relative;
+    right: $standard-padding/-1.5;
+  }
+}
