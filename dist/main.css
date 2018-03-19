@@ -1,4 +1,5 @@
-a.wwcode-link {
+/** [https://github.com/WomenWhoCode/glitter]  Build: v0.1.0 - 2018-03-19  **/ 
+ a.wwcode-link {
   color: #007a7c;
   cursor: pointer;
   font-family: "Lucida Grande";
@@ -455,3 +456,4 @@ textarea.wwcode-textarea {
   .wwcode-input.wwcode-error-input:focus {
     border: 3px solid #e04a32; }
 
+ 

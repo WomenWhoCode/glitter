@@ -1,4 +1,4 @@
-# WWCode Glitter v0.1.0
+# WWCode Glitter
 
 **Official Styles variables for Women Who Code**
 
@@ -25,41 +25,20 @@ Getting ready to start jumping in? :smiley_cat: Once you've read this README, ju
   * [Zassmin](https://github.com/zassmin)
   * [isometimescode](https://github.com/isometimescode)
 
-## Requirements
-Since this repo is a scss file of variables, your app will need to support [sass](http://sass-lang.com/install). Check out [their docs to check out how to install sass in your app](http://sass-lang.com/install).
-
 ## Installation
 
-**If you use CSS**
+### Use assets directly
 Add this tag in the [head tag](https://www.w3schools.com/tags/tag_head.asp) of your app before any other style tags:
 ```
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/WomenWhoCode/glitter/4/wwcode.css" />
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/WomenWhoCode/dist/main.css" />
 ```
 
-**If you use SCSS**
-Import the scss file into your app!
-First, navigate to the folder you'd like to host the Women Who Code styles in.
-
-```
-cd /url/to/your/scss/folder
-```
- 
-Then, download the files into your project:
-
-```
-curl -o wwcode.scss https://raw.githubusercontent.com/WomenWhoCode/glitter/4/wwcode.scss
-```
-
-Next, make sure that the wwcode styles are imported into your main app style file. Sometimes this is done automatically in your asset pipeline, but if it's not you need to import it into your desired main style file with this line:
-
-```
-@import "wwcode";
-```
-
-
+### Use a package manager
+This repo uses [yarn](https://yarnpkg.com/en/) for package and dependency management. You can include the package in your own `package.json` to get access to all our assets, build our SASS variables into your own app, etc.
+`yarn add https://github.com/WomenWhoCode/glitter.git`
 
 ## Guide
-If instalation is sucessful & there are no overriding styles in your app, you should be able to copy and paste the following code into your app:
+If installation is sucessful & there are no overriding styles in your app, you should be able to copy and paste the following code into your app:
 
 **Form Styles**
 1. [Links](#links)
@@ -403,10 +382,3 @@ If you want to make a list of errors in the alert, use this format -->
 </div>
 ```
 
-### Open Source License
-
-[The Non-Profit Open Software License version 3.0 (NPOSL-3.0)](https://opensource.org/licenses/NPOSL-3.0)
-
-Contact coreteam@womenwhocode.com with any questions
-
-WWCode reserves the right to change the open source license at anytime
