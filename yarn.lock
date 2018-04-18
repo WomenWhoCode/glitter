@@ -2455,6 +2455,10 @@ github-username@^4.0.0:
   dependencies:
     gh-got "^6.0.0"
 
+"glitter@https://github.com/WomenWhoCode/glitter.git":
+  version "0.1.1"
+  resolved "https://github.com/WomenWhoCode/glitter.git#d7d94dbcc10aa3516e3300310f4b2dbdde2d93e7"
+
 glob-all@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/glob-all/-/glob-all-3.1.0.tgz#8913ddfb5ee1ac7812656241b03d5217c64b02ab"

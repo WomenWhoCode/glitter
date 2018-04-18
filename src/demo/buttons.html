@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Glitter Documentation Site</title>
+        <link rel="stylesheet" type="text/css" href="/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    </head>
+<body>
+    <nav id="navMenu" class="nav-menu">
+    </nav>
+    <script type="text/template" id="loadNav">
+        {{#navLinks}}
+                <a href="{{linkDestination}}">
+                        {{linkName}}
+                </a>
+        {{/navLinks}}
+    </script>
+    <main>
+        <div class="body-content">
+            <header class="header">
+                <h1 class="header-title">Buttons</h1>
+                <div class="header-tagline">"We made the buttons on the screen look so good you'll want to lick them." - Steve Jobs</div>
+            </header>
+            <section>
+                <h2 class="section-header">About Buttons</h2>
+                <ul class="section-list">
+                    <li>When buttons are hovered they should have a lighter teal color.</li>
+                    <li>When buttons are pressed they should have a darker teal color.</li>
+                    <li>When buttons are disabled they should be gray and not allow pointer events.</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="section-header">Live Example</h2>
+                <button class="wwcode-button">Button</button>
+            </section>
+            <section>
+                <h2 class="section-header">Code</h2>
+                <div class="section-code">
+                    <pre>&lt;button class="wwcode-button"&gt; Yay! &lt;/button&gt;</pre>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

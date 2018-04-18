@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Glitter Documentation Site</title>
+        <link rel="stylesheet" type="text/css" href="/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    </head>
+<body>
+    <nav id="navMenu" class="nav-menu">
+    </nav>
+    <script type="text/template" id="loadNav">
+        {{#navLinks}}
+                <a href="{{linkDestination}}">
+                        {{linkName}}
+                </a>
+        {{/navLinks}}
+    </script>
+    <main>
+        <div class="body-content">
+            <header class="header">
+                <h1 class="header-title">[COMPONENT NAME]</h1>
+                <div class="header-tagline">[COMPONENT DETAILS, SUMMARY, OR TAGLINE]</div>
+            </header>
+
+            <!-- Below is a section. Replicate this section as many times as needed for your component documentation.-->
+            <section>
+                <h2 class="section-header">SECTION HEADER [ABOUT | CODE SNIPPET | LIVE EXAMPLE]</h2>
+                <p class="section-paragraph">[DETAILS OR INSTRUCTIONS FOR YOUR COMPONENT GO HERE]</p>
+                <div class="section-code">
+                    <!-- Insert your code below to display a code snippet. You will need to escape your brackets. -->
+                    <pre>This is a code snippet</pre>
+                </div>
+                [PUT YOUR COMPONENT MARKUP HERE TO INSERT A LIVE DEMO]
+            </section>
+        </div>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

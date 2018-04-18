@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Glitter Documentation Site</title>
+      <link rel="stylesheet" type="text/css" href="/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    </head>
+<body>
+    <nav id="navMenu" class="nav-menu">
+    </nav>
+    <script type="text/template" id="loadNav">
+        {{#navLinks}}
+            <a href="{{linkDestination}}">
+                    {{linkName}}
+            </a>
+        {{/navLinks}}
+    </script>
+
+    <main>
+        <div class="body-content">
+            <header class="header">
+                <h1 class="header-title">Checkboxes</h1>
+                <div class="header-tagline">"When we're talking about diversity, it's not a box to check. It is a reality that should be deeply felt and held and valued by all of us." - Ava DuVernay</div>
+            </header>
+            <section>
+                <h2 class="section-header">About Checkboxes</h2>
+                  <p class="section-paragraph">
+                    NOTE: Checkboxes will require Javascript. 
+                    Below is an example if you want to use straight Javascript in order to make it work:
+                  </p>
+                  <div class="section-code">
+                    <pre>
+                        $('.wwcode-square').click(function(){
+                          var isChecked = event.target.nextElementSibling.checked;
+                          $(this).toggleClass("selected");
+                          event.target.nextElementSibling.checked = !isChecked;
+                        });
+                    </pre>
+                  </div>
+            </section>
+            <section>
+                <h2 class="section-header">Unselected Checkboxes</h2>
+                <label class="wwcode-label">Title</label>
+                <div class="wwcode-checkbox"> 
+                  <span class="wwcode-square"></span>
+                  <input type="checkbox" />
+                  <span class="wwcode-checkbox-text">This is a Checkbox</span>
+                </div>
+                <div class="wwcode-checkbox"> 
+                  <span class="wwcode-square"></span>
+                  <input type="checkbox" />
+                  <span class="wwcode-checkbox-text">This is a Checkbox</span>
+                </div>
+                
+                <h2 class="section-header">Code</h2>
+                <div class="section-code">
+                  <pre>
+                      &lt;label class="wwcode-label">Title&lt;/label>
+                      &lt;div class="wwcode-checkbox"> 
+                      &lt;span class="wwcode-square">&lt;/span>
+                      &lt;input type="checkbox" />
+                      &lt;span class="wwcode-checkbox-text">This is a Checkbox&lt;/span>
+                      &lt;/div>
+                      &lt;div class="wwcode-checkbox"> 
+                      &lt;span class="wwcode-square">&lt;/span>
+                      &lt;input type="checkbox" />
+                      &lt;span class="wwcode-checkbox-text">This is a Checkbox&lt;/span>
+                      &lt;/div>
+                  </pre>
+                </div>
+
+                <h2 class="section-header">Selected Checkboxes</h2>
+                <label class="wwcode-label">Title</label>
+                <div class="wwcode-checkbox"> 
+                  <span class="wwcode-square selected"></span>
+                  <input type="checkbox" checked/>
+                  <span class="wwcode-checkbox-text">This is a Selected Checkbox</span>
+                </div>
+                <div class="wwcode-checkbox"> 
+                  <span class="wwcode-square selected"></span>
+                  <input type="checkbox" checked/>
+                  <span class="wwcode-checkbox-text">This is a Selected Checkbox</span>
+                </div>
+                
+                <h2 class="section-header">Code</h2>
+                <div class="section-code">
+                  <pre>
+                      &lt;label class="wwcode-label">Title&lt;/label>
+                      &lt;div class="wwcode-checkbox"> 
+                      &lt;span class="wwcode-square selected">&lt;/span>
+                      &lt;input type="checkbox" checked/>
+                      &lt;span class="wwcode-checkbox-text">This is a Selected Checkbox&lt;/span>
+                      &lt;/div>
+                      &lt;div class="wwcode-checkbox"> 
+                      &lt;span class="wwcode-square selected">&lt;/span>
+                      &lt;input type="checkbox" checked/>
+                      &lt;span class="wwcode-checkbox-text">This is a Selected Checkbox&lt;/span>
+                      &lt;/div>
+                  </pre>
+                </div>
+            </section>
+        </div>
+    </main>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
