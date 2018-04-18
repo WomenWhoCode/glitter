@@ -14,7 +14,7 @@ Contact coreteam@womenwhocode.com with any questions.
 
 :tada:
 
-Getting ready to start jumping in? :smiley_cat: Once you've read this README, jump to our [contributing guidelines](.github/CONTRIBUTING.md), our PR process is contingent on this.
+Getting ready to start jumping in? :smiley_cat: Once you've read this README, jump to our [contributing guidelines](.github/CONTRIBUTING.md), our PR process is contingent on this. If you would like to add to our documentation site, please read our [Documentation Site Guidelines](.github/DOCUMENTATION_SITE_GUIDELINES.md).
 
 ## Discuss project issues and efforts
 * If you have questions or comments about a particular issue or pull request, you can submit a comment directly in GitHub.  For further discussion, [sign up to join](http://goo.gl/forms/3TZ3eO47Yc) the Women Who Code Projects/Apps Slack team.
