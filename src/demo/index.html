@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glitter Documentation Site</title>
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+</head>
+<body>
+    <nav id="navMenu" class="nav-menu">
+      </nav>
+      <script type="text/template" id="loadNav">
+        {{#navLinks}}
+            <a href="{{linkDestination}}">
+                    {{linkName}}
+            </a>
+        {{/navLinks}}
+    </script>
+
+    <main>
+        <div class="body-content">
+            <header class="header">
+                <h1 class="header-title">Glitter</h1>
+                <div class="header-tagline">Official Styles variables for Women Who Code</div>
+            </header>
+            <section>
+                <h2 class="section-header">About Glitter</h2>
+                <p class="section-paragraph">
+                    This Repo includes the holy grail of Women Who Code style variables so you can have Women Who Code "glitter" on your website. 
+                    Guidelines for usage are covered by the Non-Profit Open Software License version 3.0 (NPOSL-3.0).
+                </p>
+            </section>
+            <section>
+                <h2 class="section-header">Open Source License</h2>
+                <p class="section-paragraph">
+                        <a href="https://opensource.org/licenses/NPOSL-3.0">The Non-Profit Open Software License version 3.0 (NPOSL-3.0).</a>
+                        Contact <a href="mailto:coreteam@womenwhocode.com">coreteam@womenwhocode.com</a> with any questions. WWCode reserves the right to change the open source license at anytime.
+                </p>
+            </section>
+            <section>
+                <h2 class="section-header">Contributing</h2>
+                <p class="section-paragraph">
+                    Getting ready to start jumping in? Once you've read the <a href="https://github.com/WomenWhoCode/glitter">README</a>, jump to our <a href="https://github.com/WomenWhoCode/glitter/blob/master/.github/CONTRIBUTING.md">contributing guidelines</a>, our PR process is contingent on this.
+                </p>
+            </section>
+            <section>
+                <h2 class="section-header">Discuss project issues and efforts</h2>
+                <p class="section-paragraph">
+                    If you have questions or comments about a particular issue or pull request, 
+                    you can submit a comment directly in GitHub. For further discussion, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdn_vKRf68llqyNyAjUfv5Ollmz6pad8ncEBSKjdb2w65EyUQ/viewform?c=0&w=1">sign up to join</a> the Women Who Code Projects/Apps Slack team.
+                </p>
+            </section>
+        </div>
+    </main>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

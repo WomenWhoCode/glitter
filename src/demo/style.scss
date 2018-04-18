@@ -1,0 +1,103 @@
+@import "../stylesheets/modules/all";
+@import "partials/reset";
+
+$wild-sand: #F5F5F5;
+$decorative-font: 'Fredericka the Great';
+
+html {
+    font-size: 10px; // let 1rem = 10px
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: 1.6rem;
+}
+
+section {
+    margin: 3.5rem 2.5rem
+}
+
+p {
+    line-height: 1.5;
+}
+
+// Sidebar Positioning
+$sidebar-width: 20rem;
+
+#navMenu {
+    height: 100%;
+    position: fixed;
+    width: $sidebar-width;
+}
+
+.body-content {
+    $body-x-padding: 1.5rem;
+    padding: 10px 15px;
+    padding-left: $sidebar-width + $body-x-padding;
+}
+
+// Header
+.header {
+    padding: 2rem;
+    text-align: center;
+}
+
+.header-title {
+    color: #333333;
+    font-family: 'Fredericka the Great', $base-font-family;
+    font-size: 6.5rem;
+    letter-spacing: .1rem;
+}
+
+.header-tagline {
+    color: #757575;
+    font-size: 1.2rem;
+    max-width: 350px;
+    margin: 2rem auto;
+}
+
+// Navigation
+.nav-menu {
+    background: linear-gradient(0deg, rgba(2,79,79,1) 50%, rgba(0,101,102,1) 100%);
+
+    a {
+        color: $wild-sand;
+        box-sizing: border-box;
+        display: block;
+        font-size: 1.8rem;
+        text-decoration: none;
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    a:hover {
+        background-color: darken($teal-dark, 5%);
+    }
+}
+
+// Section Rules
+.section-header {
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 2;
+    border-bottom: 1px solid #bfbfbf;
+    margin-bottom: 1rem;
+}
+
+.section-list {
+    line-height: 1.6rem;
+    list-style-type: square;
+    list-style-position: inside;
+
+    li {
+        margin: 1rem 0;
+    }
+}
+
+.section-code {
+    background-color: #333333;
+    color: $link-teal;
+    line-height: 1.5;
+    margin: 2rem 1rem;
+    padding: 2rem;
+}
