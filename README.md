@@ -20,10 +20,15 @@ Getting ready to start jumping in? :smiley_cat: Once you've read this README, ju
 * If you have questions or comments about a particular issue or pull request, you can submit a comment directly in GitHub.  For further discussion, [sign up to join](http://goo.gl/forms/3TZ3eO47Yc) the Women Who Code Projects/Apps Slack team.
 
 ## Project Reviewers
-* @WomenWhoCode/glitter-reviews
-  * [kaitlynhova](https://github.com/kaitlynhova)
-  * [Zassmin](https://github.com/zassmin)
-  * [isometimescode](https://github.com/isometimescode)
+* [@WomenWhoCode/glitter-reviews](https://github.com/orgs/WomenWhoCode/teams/glitter-reviews)
+
+## Partners
+
+[<img src="https://www.filepicker.io/api/file/HQk167BdQFi0MmPBZ4cV" width="200px" alt="VMware">](https://www.vmware.com/)
+[<img src="https://cdn.filepicker.io/api/file/Q9YjOHcSQ8uAENk3x7tO" width="185px" alt="Capital One">](https://www.capitalonecareers.com/)
+[<img src="https://s3-us-west-2.amazonaws.com/wwcodefroala/uploads%2F1533762927366-saucelabs.png" width="250px" alt="Sauce Labs">](https://saucelabs.com)
+
+Women Who Code projects are made possible by our partners, [VMware](https://www.vmware.com/), [Capital One](https://www.capitalonecareers.com/), and [Sauce Labs](https://saucelabs.com/).
 
 ## Installation
 
@@ -381,4 +386,3 @@ If you want to make a list of errors in the alert, use this format -->
   <span class="wwcode-delete">+</span>
 </div>
 ```
-
