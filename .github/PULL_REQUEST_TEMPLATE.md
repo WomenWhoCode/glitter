@@ -16,4 +16,4 @@ closes #
 
 
 
-@WomenWhoCode/glitter-reviews
+@WomenWhoCode/reviewers

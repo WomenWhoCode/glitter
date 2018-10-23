@@ -20,7 +20,7 @@ Getting ready to start jumping in? :smiley_cat: Once you've read this README, ju
 * If you have questions or comments about a particular issue or pull request, you can submit a comment directly in GitHub.  For further discussion, [sign up to join](http://goo.gl/forms/3TZ3eO47Yc) the Women Who Code Projects/Apps Slack team.
 
 ## Project Reviewers
-* [@WomenWhoCode/glitter-reviews](https://github.com/orgs/WomenWhoCode/teams/glitter-reviews)
+* [@WomenWhoCode/reviewers](https://github.com/orgs/WomenWhoCode/teams/reviewers)
 
 ## Partners
 
