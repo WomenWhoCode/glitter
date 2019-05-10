@@ -17,18 +17,18 @@ Contact coreteam@womenwhocode.com with any questions.
 Getting ready to start jumping in? :smiley_cat: Once you've read this README, jump to our [contributing guidelines](.github/CONTRIBUTING.md), our PR process is contingent on this.
 
 ## Discuss project issues and efforts
-* If you have questions or comments about a particular issue or pull request, you can submit a comment directly in GitHub.  For further discussion, [sign up to join](http://goo.gl/forms/3TZ3eO47Yc) the Women Who Code Projects/Apps Slack team.
+* If you have questions or comments about a particular issue or pull request, you can submit a comment directly on GitHub. For further discussion, comment on the [Core Team page](https://github.com/orgs/WomenWhoCode/teams/core-team) or the [Contributors page](https://github.com/orgs/WomenWhoCode/teams/contributors).
 
 ## Project Reviewers
 * [@WomenWhoCode/reviewers](https://github.com/orgs/WomenWhoCode/teams/reviewers)
 
 ## Partners
 
-[<img src="https://www.filepicker.io/api/file/HQk167BdQFi0MmPBZ4cV" width="200px" alt="VMware">](https://www.vmware.com/)
-[<img src="https://cdn.filepicker.io/api/file/Q9YjOHcSQ8uAENk3x7tO" width="185px" alt="Capital One">](https://www.capitalonecareers.com/)
-[<img src="https://s3-us-west-2.amazonaws.com/wwcodefroala/uploads%2F1533762927366-saucelabs.png" width="250px" alt="Sauce Labs">](https://saucelabs.com)
+[<img src="https://www.filepicker.io/api/file/HQk167BdQFi0MmPBZ4cV" width="200px" alt="VMware logo">](https://www.vmware.com/)
+[<img src="https://wwcodeassets-staging.s3-us-west-2.amazonaws.com/Filestack%2Blogo%2Bblack.png" width="185px" alt="Filestack logo">](https://www.filestack.com/)
+[<img src="https://s3-us-west-2.amazonaws.com/wwcodefroala/uploads%2F1533762927366-saucelabs.png" width="250px" alt="Sauce Labs logo">](https://saucelabs.com)
 
-Women Who Code projects are made possible by our partners, [VMware](https://www.vmware.com/), [Capital One](https://www.capitalonecareers.com/), and [Sauce Labs](https://saucelabs.com/).
+Women Who Code projects are made possible by our partners, [VMware](https://www.vmware.com/), [Filestack](https://www.filestack.com/), and [Sauce Labs](https://saucelabs.com/).
 
 ## Installation
 
