@@ -1,6 +1,7 @@
 # WWCode Glitter
 
 **Official Styles variables for Women Who Code**
+We do not use Glitter for the Women Who Code Website and have changed our styles from this guide.
 
 ## About
 This Repo includes the holy grail of Women Who Code style variables so you can have Women Who Code "glitter" on your website. Guidelines for usage are covered by [the Non-Profit Open Software License version 3.0 (NPOSL-3.0)](https://opensource.org/licenses/NPOSL-3.0).
